@@ -1,4 +1,4 @@
 public class Sirge {
-    Punkt startPoint;
-    Punkt endPoint;
+    public Sirge(Punkt startPoint, Punkt endPoint){
+    }
 }
