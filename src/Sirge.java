@@ -9,10 +9,22 @@ public class Sirge {
         this.endP = endPoint;
 
         // calculate length
-        this.len = Math.sqrt((startPoint.getXCoordinate() - endPoint.getXCoordinate()) * (startPoint.getXCoordinate() - endPoint.getXCoordinate()) + (startPoint.getYCoordinate() - endPoint.getYCoordinate()) * (startPoint.getYCoordinate() - endPoint.getYCoordinate()));
+        this.len = Math.sqrt(Math.pow(startPoint.getXCoordinate() - endPoint.getXCoordinate(), 2) + Math.pow(startPoint.getYCoordinate() - endPoint.getYCoordinate(), 2));
+    }
+
+    String getInfo(){
+        String startCoords = "(" + startP.getXCoordinate() + ", " + startP.getYCoordinate() + ")";
+        String endCoords = "(" + endP.getXCoordinate() + ", " + endP.getYCoordinate() + ")";
+        return "Sirge alguspunkti koordinaadid: " + startCoords + "\nSirge lõpupunkti koordinaadid: " + endCoords + "\nSirge pikkus: " + this.len;
     }
 
     double getLength(){
         return len;
     }
+
+    Punkt getMidPoint() {
+        Punkt midPoint = new Punkt (((this.startP.getXCoordinate() + this.endP.getXCoordinate())/2), ((this.startP.getYCoordinate() + this.endP.getYCoordinate())/2));
+        return midPoint;
+    }
+
 }
