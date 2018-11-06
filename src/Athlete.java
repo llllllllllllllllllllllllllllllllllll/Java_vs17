@@ -29,7 +29,10 @@ public class Athlete implements Comparable<Athlete>{
     }
 
     @Override
-    public int compareTo(Athlete ) {
-        return 0;
+    public int compareTo(Athlete other) {
+//        if(this.result < other.result) return 1;
+//        else if(this.result > other.result) return -1;
+//        else return 0;
+        return other.result.compareTo(this.result);
     }
 }
