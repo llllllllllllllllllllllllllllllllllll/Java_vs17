@@ -1,5 +1,35 @@
-public class Athlete {
-    String name = "";
+public class Athlete implements Comparable<Athlete>{
+    String name;
     double result = 0;
 
+    public Athlete(String s, double v) {
+        this.name = s;
+        this.result = v;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public void setName(){
+        this.name  = name;
+    }
+
+    public double getResult(){
+        return result;
+    }
+
+    public void setResult(double result) {
+        this.result = result;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s\t%5.2f", this.name, this.result);
+    }
+
+    @Override
+    public int compareTo(Athlete ) {
+        return 0;
+    }
 }
