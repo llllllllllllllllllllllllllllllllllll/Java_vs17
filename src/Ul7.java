@@ -1,6 +1,8 @@
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Locale;
+import java.util.Scanner;
+
 /*
 Loo programm, mis küsib kasutaja käest sportlase tulemuse ja nime, lisab selle ArrayList-i, sorteerib tulemuse järgi kahanevalt ning salvestab serialiseeritult faili.
 
@@ -14,21 +16,36 @@ Loo programm, mis küsib kasutaja käest sportlase tulemuse ja nime, lisab selle
 public class Ul7 {
     public static void main(String[] args){
 
-        Athlete a = new Athlete();
-        a.name = "Aleksander";
-        a.result = 2.22;
+        ArrayList<Athlete> athletes = new ArrayList<Athlete>();
+        athletes.add(new Athlete("1", 2.22) );
+        athletes.add(new Athlete("2", 3.22) );
 
-        try {
-            FileOutputStream fileOut =
-                    new FileOutputStream("/tmp/athlete.ser");
-            ObjectOutputStream out = new ObjectOutputStream(fileOut);
-            out.writeObject(a);
-            out.close();
-            fileOut.close();
-            System.out.printf("Serialized data is saved in /tmp/athlete.ser");
-        } catch (IOException i) {
-            i.printStackTrace();
+        System.out.println("Athlete name:");
+        Scanner athleteName = new Scanner(System.in);
+        String name = athleteName.nextLine();
+        System.out.println("Athlete result: ");
+        Scanner athleteResult = new Scanner(System.in).useLocale(Locale.US);
+        double result = athleteResult.nextDouble();
+        athleteName.close();
+        athletes.add(new Athlete(name, result));
+
+        Collections.sort(athletes);
+
+        for (Athlete athlete : athletes) {
+            String athleteRow = athlete.toString();
+            System.out.println(athleteRow);
         }
+
+//        try {
+//            FileOutputStream fileOut = new FileOutputStream("athlete.ser");
+//            ObjectOutputStream out = new ObjectOutputStream(fileOut);
+//            out.writeObject(athletes);
+//            out.close();
+//            fileOut.close();
+//            System.out.printf("Serialized data is saved in athlete.ser");
+//        } catch (IOException i) {
+//            i.printStackTrace();
+//        }
 
     }
 }

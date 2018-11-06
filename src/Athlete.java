@@ -1,8 +1,8 @@
 public class Athlete implements Comparable<Athlete>{
-    String name;
-    double result = 0;
+    private String name;
+    private Double result;
 
-    public Athlete(String s, double v) {
+    Athlete(String s, double v) {
         this.name = s;
         this.result = v;
     }
@@ -15,7 +15,7 @@ public class Athlete implements Comparable<Athlete>{
         this.name  = name;
     }
 
-    public double getResult(){
+    public Double getResult(){
         return result;
     }
 
