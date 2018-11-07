@@ -1,4 +1,8 @@
-public class Athlete implements Comparable<Athlete>{
+import java.io.Serializable;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Athlete implements Comparable<Athlete>, Serializable {
     private String name;
     private Double result;
 
@@ -25,7 +29,7 @@ public class Athlete implements Comparable<Athlete>{
 
     @Override
     public String toString() {
-        return String.format("%s\t%5.2f", this.name, this.result);
+        return String.format("%-12.30s  %5.2f", this.name, this.result);
     }
 
     @Override
