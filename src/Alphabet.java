@@ -89,18 +89,18 @@ public class Alphabet {
                 "█████ "
                 });
         alphabet.put('m', new String[] {
-                "██   ██ ",
-                "█ █ █ █ ",
+                "█▙   ▟█ ",
+                "█ ▚ ▞ █ ",
                 "█  █  █ ",
                 "█     █ ",
                 "█     █ "
                 });
         alphabet.put('n', new String[] {
-                "██    █ ",
-                "█ █   █ ",
-                "█  █  █ ",
-                "█   █ █ ",
-                "█    ██ "
+                "█▙    █ ",
+                "█ ▚   █ ",
+                "█  ▚  █ ",
+                "█   ▚ █ ",
+                "█    ▜█ "
                 });
         alphabet.put('o', new String[] {
                 " ███  ",
@@ -117,25 +117,25 @@ public class Alphabet {
                 "█     "
                 });
         alphabet.put('q', new String[] {
-                "██   ██ ",
-                "█ █ █ █ ",
-                "█  █  █ ",
-                "█     █ ",
-                "█     █ "
+                " ███  ",
+                "█   █ ",
+                "█   █ ",
+                "█  ██ ",
+                " ███ █"
                 });
         alphabet.put('r', new String[] {
-                "████   ",
-                "█   █  ",
-                "████   ",
-                "█  █   ",
-                "█   █  "
+                "████▙ ",
+                "█   █ ",
+                "████▛ ",
+                "█  ▜▙ ",
+                "█   █ "
                 });
         alphabet.put('s', new String[] {
-                "██   ██ ",
-                "█ █ █ █ ",
-                "█  █  █ ",
-                "█     █ ",
-                "█     █ "
+                " ███  ",
+                "█     ",
+                " ███  ",
+                "    █ ",
+                " ███  "
                 });
         alphabet.put('t', new String[] {
                 "█████ ",
@@ -143,6 +143,34 @@ public class Alphabet {
                 "  █   ",
                 "  █   ",
                 "  █   "
+                });
+        alphabet.put('ü', new String[] {
+                "  ▖▗   ",
+                "█    █ ",
+                "█    █ ",
+                "█    █ ",
+                " ▜██▛  "
+                });
+        alphabet.put('u', new String[] {
+                "█    █ ",
+                "█    █ ",
+                "█    █ ",
+                "█    █ ",
+                " ▜██▛  "
+                });
+        alphabet.put('v', new String[] {
+                "█     █ ",
+                "█     █ ",
+                " █   █  ",
+                "  █ █   ",
+                "   █    "
+                });
+        alphabet.put('w', new String[] {
+                "█         █ ",
+                "█         █ ",
+                " █   █   █  ",
+                "  █ █ █ █   ",
+                "   █   █    "
                 });
 
     }
