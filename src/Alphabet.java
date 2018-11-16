@@ -172,6 +172,41 @@ public class Alphabet {
                 "  █ █ █ █   ",
                 "   █   █    "
                 });
+        alphabet.put('ö', new String[] {
+                " ▞▚▞  ",
+                " ███  ",
+                "█   █ ",
+                "█   █ ",
+                " ███  "
+        });
+        alphabet.put('ä', new String[] {
+                " ▗ ▖  ",
+                " ███  ",
+                "█   █ ",
+                "█████ ",
+                "█   █ "
+                });
+        alphabet.put('ö', new String[] {
+                " ▗ ▖  ",
+                " ███  ",
+                "█   █ ",
+                "█   █ ",
+                " ███  "
+                });
+        alphabet.put('x', new String[] {
+                "█   █ ",
+                " █ █  ",
+                "  █   ",
+                " █ █  ",
+                "█   █ "
+                });
+        alphabet.put('y', new String[] {
+                "█     █ ",
+                " █   █  ",
+                "  █ █   ",
+                "   █    ",
+                "   █    "
+                });
 
     }
 
